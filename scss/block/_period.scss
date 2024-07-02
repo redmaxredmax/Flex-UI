@@ -1,0 +1,61 @@
+.period__container {
+    background-color: #1C232D;
+    padding: 42px 50px;
+}
+
+.period__btn {
+    background-color: #fff;
+}
+
+.period__title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -2%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.period__text {
+    color: #8896ab;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.period__wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+@media screen and (min-width:992px){
+    .period__container{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        padding: 62px 80px;
+        border-radius: 25px;
+    }
+    .period__title {
+        text-align: start;
+        font-size: 34px;
+        font-weight: 700;
+    }
+    .period__text {
+        text-align: start;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .period__block{
+        width: 600px;
+    }
+    .period__btn{
+        padding: 14px 28px;
+        font-weight: 600;
+        &:hover{
+            font-weight: 600;
+        }
+    }
+}

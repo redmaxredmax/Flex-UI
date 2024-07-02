@@ -1,0 +1,209 @@
+.gain__container {
+    padding: 130px 20px;
+}
+
+.gain__title {
+    color: #2a3342;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -2%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.gain__img {
+    display: none;
+}
+
+.gain__text {
+    color: #556987;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.gain__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.gain_frame1 {
+    display: none;
+}
+.gain_frame2 {
+    display: none;
+}
+
+.gain__item_title {
+    color: #2a3342;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    width: 350px;
+}
+
+.gain__item {
+    text-align: center;
+    &::before {
+        content: url('../../pictures/icons/features1.svg');
+        display: block;
+        text-align: center;
+    }
+}
+
+.gain__item2 {
+    &::before {
+        content: url('../../pictures/icons/features2.svg');
+        display: block;
+    }
+}
+.gain__span{
+    margin-bottom: 10px;
+}
+.gain__item3 {
+    &::before {
+        content: url('../../pictures/icons/features3.svg');
+        display: block;
+    }
+}
+
+.gain__item_text {
+    color: #556987;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    width: 350px;
+}
+
+@media screen and (min-width:640px) {
+    .gain__container {
+        padding: 100px 20px;
+    }
+
+    .gain__title {
+        color: #2a3342;
+        font-size: 34px;
+        font-weight: 600;
+        text-align: start;
+    }
+
+    .gain__text {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: start;
+    }
+
+    .gain__item_title {
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: start;
+    }
+
+    .gain__item {
+        display: flex;
+        gap: 20px;
+
+        &::before {
+            content: url('../../pictures/icons/features1.svg');
+        }
+    }
+
+    .gain__item2 {
+        &::before {
+            content: url('../../pictures/icons/features2.svg');
+
+        }
+    }
+
+    .gain__item3 {
+        &::before {
+            content: url('../../pictures/icons/features3.svg');
+        }
+    }
+
+    .gain__item_text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: start;
+    }
+
+    .gain__img {
+        display: block;
+        width: 400px;
+    }
+
+    .gain_frame1 {
+        display: block;
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        width: 100px;
+    }
+
+    .gain_frame2 {
+        display: block;
+        position: absolute;
+        bottom: -30px;
+        right: 0px;
+        width: 100px;
+    }
+
+    .gain__img_block {
+        //    padding: 30px;
+        position: relative;
+    }
+
+    .gain__cover {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .gain__title {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .gain__text {
+        font-size: 20px;
+        line-height: 30px;
+        width: 900px;
+        font-weight: 500;
+    }
+
+    .gain__item_title {
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: start;
+    }
+
+    .gain__img {
+        width: 556px;
+    }
+    .gain_frame1{
+        width: 150px;
+    }
+    .gain_frame2{
+        width: 150px;
+    }
+}
+
+.gain__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}

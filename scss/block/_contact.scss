@@ -1,0 +1,87 @@
+.contact__container {
+    text-align: center;
+}
+
+.contact__text {
+    margin-bottom: 64px;
+}
+
+.contact__title {
+    margin-bottom: 15px;
+}
+
+.contact__item {
+    display: block;
+
+    &::before {
+        content: url('../../pictures/icons/contact1.svg');
+    }
+}
+
+.contact__item2 {
+    &::before {
+        content: url('../../pictures/icons/contact2.svg');
+    }
+}
+
+.contact__item3 {
+    &::before {
+        content: url('../../pictures/icons/contact3.svg');
+    }
+}
+
+.contact__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding-bottom: 60px;
+}
+
+.contact__name {
+    color: #2a3342;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.contact__txt {
+    color: #556987;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.contact__location{
+    display: none;
+}
+@media screen and (min-width:640px){
+    .contact__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact__txt {
+        font-size: 20px;
+    }
+    .contact__name {
+        font-size: 28px;
+    }
+
+}
+@media screen and (min-width:992px){
+    .contact__container{
+        position: relative;
+    }
+    .contact__list {
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 380px;
+    }
+    .contact__name {
+        font-size: 30px;
+    }
+    .contact__location{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        top: 55%;
+        left: 20%;
+    }
+}

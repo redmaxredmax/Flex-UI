@@ -1,0 +1,56 @@
+.application__container {
+    text-align: center;
+    padding: 88px 20px;
+}
+
+.application__title {
+    color: #2a3342;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -2%;
+    margin-bottom: 30px;
+}
+
+.application__img {
+    background-image: url('../../pictures/icons/application-frame1.svg'), url('../../pictures/icons/application-frame2.svg');
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+    background-size: 80px;
+    margin-bottom: 20px;
+}
+
+.application__text {
+    color: #556987;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:640px) {
+    .application__img {
+        background-size: 120px;
+    }
+
+    .application__text {
+        font-size: 20px;
+    }
+
+    .application__title {
+        font-weight: 700;
+        font-size: 36px;
+    }
+}
+@media screen and (min-width:992px) {
+    .application__img {
+        background-size: 200px;
+    }
+    .application__text{
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

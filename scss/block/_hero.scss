@@ -1,0 +1,143 @@
+.hero__container {
+    background-color: #2A3342;
+    padding: 80px 20px;
+    padding-bottom: 88px;
+}
+
+.hero__title {
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.hero__text {
+    color: #8896ab;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hero__form {
+    margin-bottom: 10px;
+   
+}
+
+.hero__input {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 14px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px 0px #0000000d;
+    border: 1px solid #d5dae1;
+    background: #ffffff;
+    min-width: 245px;
+    display: block;
+    margin-bottom: 10px;
+
+    &::before {
+        content: url('../../pictures/icons/mail-icon.svg');
+    }
+
+    &::placeholder {
+        background-image: url('../../pictures/icons/mail-icon.svg');
+        background-repeat: no-repeat;
+        color: #667085;
+        font-size: 14px;
+        padding-left: 25px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.hero__block {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hero__btn {
+    min-width: 245px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #d5dae1;
+    background: #ffffff;
+    line-height: 28px;
+    border-radius: 8px;
+
+    &:hover {
+        color: #f0fdf4;
+        background-color: #22C55E;
+        border: none;
+    }
+}
+
+@media screen and (min-width:640px) {
+    .hero__title {
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    .hero__text {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .hero__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        margin-left: auto;
+        gap: 30px;
+        margin-right: auto;
+    }
+
+    .hero__input {
+        min-width: 320px;
+        margin-bottom: 0;
+    }
+
+    .hero__btn {
+        min-width: 200px;
+       
+    }
+}
+
+@media screen and (min-width:992px) {
+    .hero__container{
+        max-width: 1140px;
+        border-radius: 20px;
+        padding: 130px;
+        position: relative;
+        background-image: url('../../pictures/icons/hero-frame1.svg'),url('../../pictures/icons/hero-frame2.svg'),url('../../pictures/icons/hero-frame3.svg'),url('../../pictures/icons/hero-frame4.svg');
+        background-position: top left, top right, bottom left, bottom right;
+        background-repeat: no-repeat;
+    }
+    .hero__title {
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    .hero__text {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .hero__input {
+        min-width: 350px;
+        padding: 15px ;
+    }
+    .hero__form{
+        width: 600px;
+    }
+
+    .hero__btn {
+        min-width: 220px;
+        padding: 6px 16px;
+    }
+}
